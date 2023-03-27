@@ -1,0 +1,63 @@
+* {
+    box-sizing: content-box;
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url(../fonts/Pixel.ttf);
+}
+
+.main {
+    position: relative;
+    background-color: deepskyblue;
+    border: 1.5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.pipes {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pipe .border-pipe{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid black ;
+}
+
+.pipe .body-pipe{
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.progress {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 1;
+}
